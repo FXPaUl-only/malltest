@@ -1,4 +1,3 @@
-
 package cn.fxpaul.config;
 
 import cn.fxpaul.modules.sys.oauth2.OAuth2Filter;

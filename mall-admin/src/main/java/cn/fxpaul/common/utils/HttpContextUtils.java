@@ -1,5 +1,3 @@
-
-
 package cn.fxpaul.common.utils;
 
 import org.springframework.web.context.request.RequestContextHolder;

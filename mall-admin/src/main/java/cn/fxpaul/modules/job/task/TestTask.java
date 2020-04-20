@@ -1,10 +1,3 @@
-/**
- * Copyright (c) 2016-2019 谷粒开源 All rights reserved.
- *
- * https://www.guli.cloud
- *
- * 版权所有，侵权必究！
- */
 
 package cn.fxpaul.modules.job.task;
 
@@ -17,7 +10,7 @@ import org.springframework.stereotype.Component;
  *
  * testTask为spring bean的名称
  *
- * @author Mark sunlightcs@gmail.com
+ * @author FXPaul
  */
 @Component("testTask")
 public class TestTask implements ITask {

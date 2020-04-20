@@ -1,7 +1,7 @@
 
 package cn.fxpaul.core.utils;
 
-import cn.fxpaul.core.exception.RRException;
+import cn.fxpaul.core.exception.MyException;
 import org.apache.commons.lang.StringUtils;
 
 /**
@@ -34,7 +34,7 @@ public class SQLFilter {
         //判断是否包含非法字符
         for(String keyword : keywords){
             if(str.indexOf(keyword) != -1){
-                throw new RRException("包含非法字符");
+                throw new MyException("包含非法字符");
             }
         }
 

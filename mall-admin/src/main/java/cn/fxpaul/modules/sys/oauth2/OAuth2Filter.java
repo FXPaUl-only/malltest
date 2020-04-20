@@ -1,10 +1,3 @@
-/**
- * Copyright (c) 2016-2019 谷粒开源 All rights reserved.
- *
- * https://www.guli.cloud
- *
- * 版权所有，侵权必究！
- */
 
 package cn.fxpaul.modules.sys.oauth2;
 
@@ -27,7 +20,7 @@ import java.io.IOException;
 /**
  * oauth2过滤器
  *
- * @author Mark sunlightcs@gmail.com
+ * @author FXPaul
  */
 public class OAuth2Filter extends AuthenticatingFilter {
 

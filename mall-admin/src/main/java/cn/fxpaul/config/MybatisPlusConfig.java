@@ -1,5 +1,3 @@
-
-
 package cn.fxpaul.config;
 
 import com.baomidou.mybatisplus.core.injector.ISqlInjector;

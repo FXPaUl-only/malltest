@@ -1,5 +1,3 @@
-
-
 package cn.fxpaul.config;
 
 import cn.fxpaul.common.xss.XssFilter;
@@ -9,7 +7,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.filter.DelegatingFilterProxy;
 
 import javax.servlet.DispatcherType;
-
 /**
  * Filter配置
  *

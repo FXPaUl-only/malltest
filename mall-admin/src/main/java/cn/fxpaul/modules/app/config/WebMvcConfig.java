@@ -1,10 +1,3 @@
-/**
- * Copyright (c) 2016-2019 谷粒开源 All rights reserved.
- *
- * https://www.guli.cloud
- *
- * 版权所有，侵权必究！
- */
 
 package cn.fxpaul.modules.app.config;
 
@@ -21,7 +14,7 @@ import java.util.List;
 /**
  * MVC配置
  *
- * @author Mark sunlightcs@gmail.com
+ * @author FXPaul
  */
 @Configuration
 public class WebMvcConfig implements WebMvcConfigurer {

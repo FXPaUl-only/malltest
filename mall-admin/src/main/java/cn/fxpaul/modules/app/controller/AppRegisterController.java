@@ -1,10 +1,3 @@
-/**
- * Copyright (c) 2016-2019 谷粒开源 All rights reserved.
- *
- * https://www.guli.cloud
- *
- * 版权所有，侵权必究！
- */
 
 package cn.fxpaul.modules.app.controller;
 
@@ -28,7 +21,7 @@ import java.util.Date;
 /**
  * 注册
  *
- * @author Mark sunlightcs@gmail.com
+ * @author FXPaul
  */
 @RestController
 @RequestMapping("/app")

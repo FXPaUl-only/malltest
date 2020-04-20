@@ -1,5 +1,3 @@
-
-
 package cn.fxpaul.common.validator;
 
 import cn.fxpaul.common.exception.RRException;

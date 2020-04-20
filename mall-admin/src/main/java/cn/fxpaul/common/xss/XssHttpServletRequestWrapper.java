@@ -1,5 +1,3 @@
-
-
 package cn.fxpaul.common.xss;
 
 import org.apache.commons.io.IOUtils;

@@ -1,5 +1,4 @@
 
-
 package cn.fxpaul.common.utils;
 
 import cn.fxpaul.common.xss.SQLFilter;

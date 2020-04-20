@@ -1,5 +1,3 @@
-
-
 package cn.fxpaul.config;
 
 import com.google.code.kaptcha.impl.DefaultKaptcha;

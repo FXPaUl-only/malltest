@@ -1,5 +1,3 @@
-
-
 package cn.fxpaul.config;
 
 import org.springframework.beans.factory.annotation.Autowired;

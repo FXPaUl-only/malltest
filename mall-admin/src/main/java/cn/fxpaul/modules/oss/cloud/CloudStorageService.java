@@ -1,10 +1,3 @@
-/**
- * Copyright (c) 2016-2019 谷粒开源 All rights reserved.
- *
- * https://www.guli.cloud
- *
- * 版权所有，侵权必究！
- */
 
 package cn.fxpaul.modules.oss.cloud;
 
@@ -18,7 +11,7 @@ import java.util.UUID;
 /**
  * 云存储(支持七牛、阿里云、腾讯云、又拍云)
  *
- * @author Mark sunlightcs@gmail.com
+ * @author FXPaul
  */
 public abstract class CloudStorageService {
     /** 云存储配置信息 */

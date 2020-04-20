@@ -1,5 +1,3 @@
-
-
 package cn.fxpaul.config;
 
 import io.swagger.annotations.ApiOperation;

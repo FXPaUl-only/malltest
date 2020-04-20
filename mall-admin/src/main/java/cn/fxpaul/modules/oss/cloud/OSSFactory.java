@@ -1,10 +1,3 @@
-/**
- * Copyright (c) 2016-2019 谷粒开源 All rights reserved.
- *
- * https://www.guli.cloud
- *
- * 版权所有，侵权必究！
- */
 
 package cn.fxpaul.modules.oss.cloud;
 
@@ -17,7 +10,7 @@ import cn.fxpaul.common.utils.ConfigConstant;
 /**
  * 文件上传Factory
  *
- * @author Mark sunlightcs@gmail.com
+ * @author FXPaul
  */
 public final class OSSFactory {
     private static SysConfigService sysConfigService;

@@ -1,5 +1,3 @@
-
-
 package cn.fxpaul.common.validator.group;
 
 /**

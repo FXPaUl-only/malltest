@@ -1,5 +1,4 @@
 
-
 package cn.fxpaul.common.utils;
 
 import org.apache.http.HttpStatus;

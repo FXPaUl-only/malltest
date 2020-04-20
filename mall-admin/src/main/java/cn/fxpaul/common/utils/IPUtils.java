@@ -1,4 +1,3 @@
-
 package cn.fxpaul.common.utils;
 
 import com.alibaba.druid.util.StringUtils;

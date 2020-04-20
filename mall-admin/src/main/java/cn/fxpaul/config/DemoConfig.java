@@ -1,8 +1,8 @@
-//package io.guli.config;
+//package cn.fxpaul.config;
 //
+//import cn.fxpaul.common.utils.HttpContextUtils;
+//import cn.fxpaul.common.utils.R;
 //import com.google.gson.Gson;
-//import HttpContextUtils;
-//import R;
 //import org.apache.http.HttpStatus;
 //import org.springframework.boot.web.servlet.FilterRegistrationBean;
 //import org.springframework.context.annotation.Bean;

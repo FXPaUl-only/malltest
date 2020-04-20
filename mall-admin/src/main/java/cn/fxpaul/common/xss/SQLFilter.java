@@ -1,5 +1,3 @@
-
-
 package cn.fxpaul.common.xss;
 
 import cn.fxpaul.common.exception.RRException;
