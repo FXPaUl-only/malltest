@@ -1,0 +1,53 @@
+
+D
+java:S4274"(Replace this assert with a proper check.( Í¨öøÿÿÿÿ
+P
+java:S2864¬"4Iterate over the "entrySet" instead of the "keySet".(”ıİîùÿÿÿÿ
+?
+java:S1659ñ"(Declare "paramValue" on a separate line.(ŸÉÛÚ
+?
+java:S1125®"(Remove the literal "true" boolean value.(¢·£Ä
+K
+java:S1066Ğ"/Merge this if statement with the enclosing one.(‹îıØüÿÿÿÿ
+D
+java:S4274"(Replace this assert with a proper check.(ñŸ¦‰şÿÿÿÿ
+?
+java:S4274¢"(Replace this assert with a proper check.(÷Ü•º
+t
+java:S2293t"YReplace the type specification in this constructor call with the diamond operator ("<>").(¥Õøÿÿÿÿ
+i
+java:S3776Ê"RRefactor this method to reduce its Cognitive Complexity from 50 to the 15 allowed.(‚Şÿê
+?
+java:S4274 "(Replace this assert with a proper check.(ÆªÀ
+3
+java:S1643®"Use a StringBuilder instead.(šû¯†
+t
+java:S2293H"YReplace the type specification in this constructor call with the diamond operator ("<>").(çÖÒøÿÿÿÿ
+n
+java:S2293I"YReplace the type specification in this constructor call with the diamond operator ("<>").(“Ò¨Q
+>
+java:S1125¯"(Remove the literal "true" boolean value.(òİ•
+p
+java:S2293æ"YReplace the type specification in this constructor call with the diamond operator ("<>").(¯Ë½¤
+D
+java:S4274£"(Replace this assert with a proper check.(õÓï¡øÿÿÿÿ
+>
+java:S4274¤"(Replace this assert with a proper check.(‰¬f
+t
+java:S2293N"YReplace the type specification in this constructor call with the diamond operator ("<>").(âëÊ°ÿÿÿÿÿ
+K
+java:S1066Ñ"/Merge this if statement with the enclosing one.(„–…Œûÿÿÿÿ
+t
+java:S2293o"YReplace the type specification in this constructor call with the diamond operator ("<>").(²ÃÃæıÿÿÿÿ
+t
+java:S2293{"YReplace the type specification in this constructor call with the diamond operator ("<>").(˜İúÔÿÿÿÿÿ
+?
+java:S1125°"(Remove the literal "true" boolean value.(¼¶ŞŞ
+p
+java:S2293ç"YReplace the type specification in this constructor call with the diamond operator ("<>").(“¿¬ö
+?
+java:S4274Ÿ"(Replace this assert with a proper check.(À«œ¾
+?
+java:S4274¡"(Replace this assert with a proper check.(‚õÛ
+3
+java:S1643ş"Use a StringBuilder instead.(ºú·

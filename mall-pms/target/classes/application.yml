@@ -1,0 +1,29 @@
+server:
+  port: 8081
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.125.128:3307/guli_pms?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: root
+  redis:
+    host: 192.168.125.128
+mybatis-plus:
+  mapper-locations: classpath:mapper/pms/*.xml  # 读取映射文件
+  global-config:
+    db-config:
+      id-type: auto  # 默认使用数据库自增
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+aliyun:
+  oss:
+    file:
+      endpoint: oss-cn-hangzhou.aliyuncs.com
+      keyid: LTAI4Fw4fZWFbVEcCN12eEKw
+      keysecret: GezHz9LhIEnF3IEeR9Ms6ha7oBXzKl
+      #bucket可以在控制台创建，也可以使用java代码创建
+      bucketname: fxpaul-mall

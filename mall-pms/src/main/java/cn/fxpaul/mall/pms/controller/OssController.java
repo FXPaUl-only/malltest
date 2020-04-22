@@ -28,6 +28,10 @@ import java.util.Map;
 public class OssController {
 
 
+    /**
+     * 方便才写这里的
+     * @return
+     */
     @GetMapping("policy")
     public Resp<Object> policy() {
         String accessId = "LTAI4Fw4fZWFbVEcCN12eEKw"; // 请填写您的AccessKeyId。
