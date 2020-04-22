@@ -13,6 +13,7 @@ import cn.fxpaul.mall.pms.entity.AttrEntity;
 import cn.fxpaul.mall.pms.service.AttrService;
 
 
+
 @Service("attrService")
 public class AttrServiceImpl extends ServiceImpl<AttrDao, AttrEntity> implements AttrService {
 
