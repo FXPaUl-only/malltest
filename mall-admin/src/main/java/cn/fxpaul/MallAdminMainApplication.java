@@ -9,7 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * @author FXPaul
  */
-@SpringBootApplication
+@SpringBootApplication()
 public class MallAdminMainApplication {
 
 	public static void main(String[] args) {

@@ -14,9 +14,6 @@ import org.springframework.web.bind.annotation.*;
 import cn.fxpaul.mall.pms.entity.BrandEntity;
 import cn.fxpaul.mall.pms.service.BrandService;
 
-
-
-
 /**
  * 品牌
  *
@@ -28,6 +25,7 @@ import cn.fxpaul.mall.pms.service.BrandService;
 @RestController
 @RequestMapping("pms/brand")
 public class BrandController {
+
     @Autowired
     private BrandService brandService;
 
@@ -50,8 +48,8 @@ public class BrandController {
     @ApiOperation("详情查询")
     @GetMapping("/info/{brandId}")
     @PreAuthorize("hasAuthority('pms:brand:info')")
-    public Resp<BrandEntity> info(@PathVariable("brandId") Long brandId){
-		BrandEntity brand = brandService.getById(brandId);
+    public Resp<BrandEntity> info(@PathVariable("brandId") Long brandId) {
+        BrandEntity brand = brandService.getById(brandId);
 
         return Resp.ok(brand);
     }
@@ -62,8 +60,8 @@ public class BrandController {
     @ApiOperation("保存")
     @PostMapping("/save")
     @PreAuthorize("hasAuthority('pms:brand:save')")
-    public Resp<Object> save(@RequestBody BrandEntity brand){
-		brandService.save(brand);
+    public Resp<Object> save(@RequestBody BrandEntity brand) {
+        brandService.save(brand);
 
         return Resp.ok(null);
     }
@@ -74,8 +72,8 @@ public class BrandController {
     @ApiOperation("修改")
     @PostMapping("/update")
     @PreAuthorize("hasAuthority('pms:brand:update')")
-    public Resp<Object> update(@RequestBody BrandEntity brand){
-		brandService.updateById(brand);
+    public Resp<Object> update(@RequestBody BrandEntity brand) {
+        brandService.updateById(brand);
 
         return Resp.ok(null);
     }
@@ -86,8 +84,8 @@ public class BrandController {
     @ApiOperation("删除")
     @PostMapping("/delete")
     @PreAuthorize("hasAuthority('pms:brand:delete')")
-    public Resp<Object> delete(@RequestBody Long[] brandIds){
-		brandService.removeByIds(Arrays.asList(brandIds));
+    public Resp<Object> delete(@RequestBody Long[] brandIds) {
+        brandService.removeByIds(Arrays.asList(brandIds));
 
         return Resp.ok(null);
     }

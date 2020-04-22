@@ -20,7 +20,23 @@ public class AttrServiceImpl extends ServiceImpl<AttrDao, AttrEntity> implements
     public PageVo queryPage(QueryCondition params) {
         IPage<AttrEntity> page = this.page(
                 new Query<AttrEntity>().getPage(params),
-                new QueryWrapper<AttrEntity>()
+                new QueryWrapper<>()
+        );
+
+        return new PageVo(page);
+    }
+
+    @Override
+    public PageVo queryByCidTypePage(QueryCondition queryCondition, Long cid, Integer type) {
+        // 构建查询条件
+        QueryWrapper<AttrEntity> wrapper = new QueryWrapper<>();
+        wrapper.eq("catelog_id", cid);
+        if (type != null) {
+            wrapper.eq("attr_type", type);
+        }
+        IPage<AttrEntity> page = this.page(
+                new Query<AttrEntity>().getPage(queryCondition), // 构建分页条件
+                wrapper
         );
 
         return new PageVo(page);

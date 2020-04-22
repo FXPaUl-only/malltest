@@ -7,7 +7,7 @@ import org.springframework.cloud.context.config.annotation.RefreshScope;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
- * @author 48642
+ * @author FXPaul
  */
 @SpringBootApplication
 @MapperScan(basePackages = "cn.fxpaul.mall.pms.dao")

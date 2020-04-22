@@ -16,5 +16,13 @@ import cn.fxpaul.mall.pms.entity.AttrGroupEntity;
 public interface AttrGroupService extends IService<AttrGroupEntity> {
 
     PageVo queryPage(QueryCondition params);
+
+    /**
+     * 查询规格分组
+     * @param cid 分离id
+     * @param condition 查询太久
+     * @return 分页对象
+     */
+    PageVo queryByCidPage(Long cid, QueryCondition condition);
 }
 

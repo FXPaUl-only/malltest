@@ -15,5 +15,7 @@ import cn.fxpaul.mall.pms.entity.AttrEntity;
 public interface AttrService extends IService<AttrEntity> {
 
     PageVo queryPage(QueryCondition params);
+
+    PageVo queryByCidTypePage(QueryCondition queryCondition, Long cid, Integer type);
 }
 

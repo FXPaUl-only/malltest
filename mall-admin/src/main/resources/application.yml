@@ -7,7 +7,7 @@ server:
   port: 8080
   connection-timeout: 5000ms
   servlet:
-    context-path: /gmall-admin
+    context-path: /mall-admin
 
 spring:
   # 环境 dev|test|prod
@@ -37,6 +37,13 @@ spring:
         min-idle: 5       # 连接池中的最小空闲连接
   mvc:
     throw-exception-if-no-handler-found: true
+#  application:
+#    name: mall-admin
+#  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: 127.0.0.1
+
 #  resources:
 #    add-mappings: false
 
@@ -74,7 +81,7 @@ guli:
   # APP模块，是通过jwt认证的，如果要使用APP模块，则需要修改【加密秘钥】
   jwt:
     # 加密秘钥
-    secret: f4e2e52034348f86b67cde581c0f9eb5[www.guli.cloud]
+    secret: f4e2e52034348f86b67cde581c0f9eb5[www.renren.io]
     # token有效时长，7天，单位秒
     expire: 604800
     header: token
