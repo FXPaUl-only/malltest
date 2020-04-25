@@ -1,6 +1,7 @@
 package cn.fxpaul.mall.pms.controller;
 
 import java.util.Arrays;
+import java.util.List;
 
 
 import cn.fxpaul.core.bean.PageVo;
@@ -31,6 +32,18 @@ import cn.fxpaul.mall.pms.service.AttrAttrgroupRelationService;
 public class AttrAttrgroupRelationController {
     @Autowired
     private AttrAttrgroupRelationService attrAttrgroupRelationService;
+
+
+    @ApiOperation("删除关联关系")
+    @PostMapping("/delete/attr")
+    public Resp<String> delete(@RequestBody List<AttrAttrgroupRelationEntity> relationEntities){
+
+        this.attrAttrgroupRelationService.delete(relationEntities);
+
+        return Resp.ok("删除成功");
+    }
+
+
 
     /**
      * 列表

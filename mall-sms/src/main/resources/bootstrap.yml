@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: service-sms
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        namespace: 11d5c9b2-2e01-4b74-b964-d2763352dd49
+        group: dev
+        file-extension: yml  # 默认找服务名.properties文件

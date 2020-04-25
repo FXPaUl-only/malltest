@@ -1,10 +1,12 @@
 package cn.fxpaul.mall.pms.controller;
 
 import java.util.Arrays;
+import java.util.List;
 
 import cn.fxpaul.core.bean.PageVo;
 import cn.fxpaul.core.bean.QueryCondition;
 import cn.fxpaul.core.bean.Resp;
+import cn.fxpaul.mall.pms.entity.vo.AttrGroupVo;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,6 +32,14 @@ public class AttrGroupController {
     private AttrGroupService attrGroupService;
 
 
+    @ApiOperation("根据分组id查询分组及组下的规格参数")
+    @GetMapping("withattr/{gid}")
+    public Resp<AttrGroupVo> queryById(@PathVariable("gid")Long gid){
+
+        AttrGroupVo attrGroupVo = this.attrGroupService.queryById(gid);
+        return Resp.ok(attrGroupVo);
+    }
+
 
     @ApiOperation("根据三级分类id分页查询")
     @GetMapping("{cid}")
@@ -37,6 +47,15 @@ public class AttrGroupController {
 
         PageVo pageVo = this.attrGroupService.queryByCidPage(cid, condition);
         return Resp.ok(pageVo);
+    }
+
+
+    @ApiOperation("根据三级分类id查询分组及组下的规格参数")
+    @GetMapping("/withattrs/cat/{catId}")
+    public Resp<List<AttrGroupVo>> queryByCid(@PathVariable("catId")Long cid){
+
+        List<AttrGroupVo> attrGroupVos = this.attrGroupService.queryByCid(cid);
+        return Resp.ok(attrGroupVos);
     }
 
 

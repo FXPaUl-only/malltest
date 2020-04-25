@@ -16,5 +16,6 @@ import cn.fxpaul.mall.pms.entity.SkuInfoEntity;
 public interface SkuInfoService extends IService<SkuInfoEntity> {
 
     PageVo queryPage(QueryCondition params);
+
 }
 

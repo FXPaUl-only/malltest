@@ -5,6 +5,8 @@ import cn.fxpaul.core.bean.QueryCondition;
 import com.baomidou.mybatisplus.extension.service.IService;
 import cn.fxpaul.mall.pms.entity.AttrAttrgroupRelationEntity;
 
+import java.util.List;
+
 
 /**
  * 属性&属性分组关联
@@ -16,5 +18,7 @@ import cn.fxpaul.mall.pms.entity.AttrAttrgroupRelationEntity;
 public interface AttrAttrgroupRelationService extends IService<AttrAttrgroupRelationEntity> {
 
     PageVo queryPage(QueryCondition params);
+
+    void delete(List<AttrAttrgroupRelationEntity> relationEntities);
 }
 

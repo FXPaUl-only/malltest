@@ -2,6 +2,7 @@ package cn.fxpaul.mall.pms.service;
 
 import cn.fxpaul.core.bean.PageVo;
 import cn.fxpaul.core.bean.QueryCondition;
+import cn.fxpaul.mall.pms.entity.vo.AttrVO;
 import com.baomidou.mybatisplus.extension.service.IService;
 import cn.fxpaul.mall.pms.entity.AttrEntity;
 
@@ -17,5 +18,7 @@ public interface AttrService extends IService<AttrEntity> {
     PageVo queryPage(QueryCondition params);
 
     PageVo queryByCidTypePage(QueryCondition queryCondition, Long cid, Integer type);
+
+    void saveAttrVO(AttrVO attrVO);
 }
 

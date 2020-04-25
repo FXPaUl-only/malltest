@@ -2,8 +2,11 @@ package cn.fxpaul.mall.pms.service;
 
 import cn.fxpaul.core.bean.PageVo;
 import cn.fxpaul.core.bean.QueryCondition;
+import cn.fxpaul.mall.pms.entity.vo.AttrGroupVo;
 import com.baomidou.mybatisplus.extension.service.IService;
 import cn.fxpaul.mall.pms.entity.AttrGroupEntity;
+
+import java.util.List;
 
 
 /**
@@ -24,5 +27,19 @@ public interface AttrGroupService extends IService<AttrGroupEntity> {
      * @return 分页对象
      */
     PageVo queryByCidPage(Long cid, QueryCondition condition);
+
+    /**
+     *
+     * @param gid
+     * @return
+     */
+    AttrGroupVo queryById(Long gid);
+
+    /**
+     * 查询分类下的分组及其规格参数
+     * @param cid
+     * @return
+     */
+    List<AttrGroupVo> queryByCid(Long cid);
 }
 

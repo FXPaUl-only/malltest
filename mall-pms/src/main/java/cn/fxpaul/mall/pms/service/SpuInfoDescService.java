@@ -2,6 +2,7 @@ package cn.fxpaul.mall.pms.service;
 
 import cn.fxpaul.core.bean.PageVo;
 import cn.fxpaul.core.bean.QueryCondition;
+import cn.fxpaul.mall.pms.entity.vo.SpuInfoVO;
 import com.baomidou.mybatisplus.extension.service.IService;
 import cn.fxpaul.mall.pms.entity.SpuInfoDescEntity;
 
@@ -15,5 +16,7 @@ import cn.fxpaul.mall.pms.entity.SpuInfoDescEntity;
 public interface SpuInfoDescService extends IService<SpuInfoDescEntity> {
 
     PageVo queryPage(QueryCondition params);
+
+    void saveSpuDesc(SpuInfoVO spuInfoVO, Long spuId);
 }
 

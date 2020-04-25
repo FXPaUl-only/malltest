@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: service-oms
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        namespace: 70e615cf-b32e-43d6-b13c-9de605fa3d80
+        group: dev
+        file-extension: yml  # 默认找服务名.properties文件

@@ -12,6 +12,8 @@ import cn.fxpaul.mall.pms.dao.AttrAttrgroupRelationDao;
 import cn.fxpaul.mall.pms.entity.AttrAttrgroupRelationEntity;
 import cn.fxpaul.mall.pms.service.AttrAttrgroupRelationService;
 
+import java.util.List;
+
 
 @Service("attrAttrgroupRelationService")
 public class AttrAttrgroupRelationServiceImpl extends ServiceImpl<AttrAttrgroupRelationDao, AttrAttrgroupRelationEntity> implements AttrAttrgroupRelationService {
@@ -24,6 +26,16 @@ public class AttrAttrgroupRelationServiceImpl extends ServiceImpl<AttrAttrgroupR
         );
 
         return new PageVo(page);
+    }
+
+    @Override
+    public void delete(List<AttrAttrgroupRelationEntity> relationEntities) {
+        relationEntities.forEach(relationEntity -> {
+            this.remove(new QueryWrapper<AttrAttrgroupRelationEntity>()
+                    .eq("attr_id", relationEntity.getAttrId())
+                    .eq("attr_group_id", relationEntity.getAttrGroupId())
+            );
+        });
     }
 
 }

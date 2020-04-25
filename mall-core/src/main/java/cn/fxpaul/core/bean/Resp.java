@@ -33,16 +33,28 @@ public class Resp<T> {
         this.data = data;
     }
 
+    /**
+     * 操作成功
+     * @param data
+     * @param <T>
+     * @return
+     */
     public static<T> Resp<T> ok(T data){
         Resp<T> resp = new Resp<T>(data);
-        resp.setCode(0);//操作成功
+        resp.setCode(0);
         resp.setMsg("success");
         return resp;
     }
 
+    /**
+     * 操作失败
+     * @param msg
+     * @param <T>
+     * @return
+     */
     public static<T> Resp<T> fail(String msg){
         Resp<T> resp = new Resp<T>();
-        resp.setCode(1);//操作失败
+        resp.setCode(1);
         resp.setMsg(msg);
         return resp;
     }

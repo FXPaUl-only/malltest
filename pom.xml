@@ -12,6 +12,7 @@
     <modules>
         <module>mall-core</module>
         <module>mall-admin</module>
+        <module>mall-sms-interface</module>
     </modules>
 
 </project>
